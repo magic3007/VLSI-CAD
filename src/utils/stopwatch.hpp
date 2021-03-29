@@ -7,14 +7,14 @@
  */
 #pragma once
 
-#include "base.h"
+#include "base.hpp"
 #include <chrono>
 #include <vector>
 
 namespace stopwatch {
 
 class Stopwatch {
-    DISALLOW_COPY_AND_ASSIGN(Stopwatch);
+    DISABLE_COPY_AND_ASSIGN(Stopwatch);
 
 public:
     enum class TimeFormat
