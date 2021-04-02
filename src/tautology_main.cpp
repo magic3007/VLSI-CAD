@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
     auto root = BDDOperator::OR(bdds_array, vars_rank);
 
     bool result = travelBDD(root);
-    LOG(INFO) << "🤔 Whether this boolean function is tautology? " << (result ? "Yes!" : "No!");
+    LOG(INFO) << "🤔 Whether is this boolean function a tautology? " << (result ? "Yes!" : "No!");
     LOG(INFO) << std::setw(10)
               << "Total Elapsed time: " << stopwatch.elapsed<stopwatch::microseconds>() / 1000.0
               << " ms.";
