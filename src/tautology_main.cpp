@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
     google::InitGoogleLogging(argv[0]);
     FLAGS_logtostderr = true;
     if (argc != 2) {
-        fprintf(stderr, "Usage: %s <input cube file path>", argv[0]);
+        fprintf(stderr, "Usage: %s <input cube file path>\n", argv[0]);
         exit(-1);
     }
     char *input_path = argv[1];

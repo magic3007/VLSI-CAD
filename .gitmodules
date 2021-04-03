@@ -1,0 +1,3 @@
+[submodule "3rdparty/lorina"]
+	path = 3rdparty/lorina
+	url = https://github.com/hriener/lorina.git

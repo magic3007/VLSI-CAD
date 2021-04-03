@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 # Credit to https://github.com/berkeley-abc/abc
 set(READLINE_FOUND "FALSE")
 
+set(LORINA_EXAMPLES OFF)
+
 add_subdirectory(3rdparty)
 
 add_subdirectory(src)
