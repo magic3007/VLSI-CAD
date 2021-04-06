@@ -6,6 +6,7 @@
 
 enum class CellType
 {
+    SAME,
     INV,
     NAND2,
     NOR2,
@@ -19,6 +20,8 @@ enum class CellType
 
 inline const char *ToString(CellType cell_type) {
     switch (cell_type) {
+        case CellType::SAME:
+            return "SAME";
         case CellType::INV:
             return "INV";
         case CellType::NAND2:

@@ -223,6 +223,7 @@ void transferState(Node p, DpState &state, bool is_virtually_inverse) {
                 DLOG_ASSERT(false);
         }
     }
+    return;
     if (!p.sources()[0].is_leaf() && p.sources()[0].num_fan_out() == 1 &&
         p.sources()[0].num_sources() == 2) {
         auto aoi21_state   = detail::makeDpState();
@@ -321,26 +322,25 @@ DpState DFS(Node p, bool is_inv) {
             inv_state.sons()      = {ori_state};
             inv_state.update();
         } else {
-            ori_state.cell_type()    = p.cover_out_state() == 0 ? CellType::ONE : CellType::ZERO;
-            ori_state.max_depth()    = 1;
-            ori_state.min_cell_cnt() = 1;
+            inv_state.cell_type()    = p.cover_out_state() == 0 ? CellType::ONE : CellType::ZERO;
+            inv_state.max_depth()    = 1;
+            inv_state.min_cell_cnt() = 1;
         }
         return p.dp_state(is_inv);
     }
 
     if (p.num_sources() == 1) {
-        bool is_same = p.cover_a_state() == p.cover_out_state();
-        Node son     = p.sources()[0];
-        if (p.num_fan_out() <= 1) {
-            ori_state = DFS(son, is_same);
-            inv_state = DFS(son, !is_same);
-        } else {
-            ori_state             = DFS(son, is_same);
-            inv_state.name()      = "virtually_inverse_" + p.name();
-            inv_state.cell_type() = CellType::INV;
-            inv_state.sons()      = {ori_state};
-            inv_state.update();
-        }
+        bool is_same          = p.cover_a_state() == p.cover_out_state();
+        Node son              = p.sources()[0];
+        ori_state.name()      = p.name();
+        ori_state.cell_type() = CellType::SAME;
+        ori_state.sons()      = {DFS(son, !is_same)};
+        ori_state.update();
+
+        inv_state.name()      = "virtually_inverse_" + p.name();
+        inv_state.cell_type() = CellType::INV;
+        inv_state.sons()      = {ori_state};
+        inv_state.update();
         return p.dp_state(is_inv);
     }
 
@@ -351,12 +351,12 @@ DpState DFS(Node p, bool is_inv) {
     auto t3_state = detail::makeDpState();
     auto t4_state = detail::makeDpState();
 
-    t3_state.name()      = p.name() + "_INV";
+    t3_state.name()      = p.name() + "_HEAD_INV";
     t3_state.cell_type() = CellType::INV;
     t3_state.sons()      = {inv_state};
     t3_state.update();
 
-    t4_state.name()      = p.name() + "_INV";
+    t4_state.name()      = p.name() + "_HEAD_INV";
     t4_state.cell_type() = CellType::INV;
     t4_state.sons()      = {ori_state};
     t4_state.update();
@@ -365,6 +365,7 @@ DpState DFS(Node p, bool is_inv) {
     releaseState(inv_state, t4_state);
 
     if (p.num_fan_out() == 1) { inv_state = t4_state; }
+    inv_state = t4_state;
 
     inv_state.name() = "virtually_inverse_" + inv_state.name();
     return p.dp_state(is_inv);
@@ -429,6 +430,10 @@ public:
             case CellType::ZERO:
                 DLOG_ASSERT(st.sons().empty());
                 oss_ << "0" << std::endl;
+                break;
+            case CellType::SAME:
+                DLOG_ASSERT(st.sons().size() == 1);
+                oss_ << "1 1" << std::endl;
                 break;
             case CellType::UNDEFINED:
                 DLOG_ASSERT(false);
