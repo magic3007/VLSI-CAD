@@ -13,9 +13,16 @@ cmake ..
 make
 ```
 
-### Test
-
+### Running & Test
+- Run benchmarks with validation
 ```bash
 make run_autology
 make run_equivalence
+make run_techmap 1> /dev/null
+```
+- Run with unittest.
+```bash
+ctest -R autology
+ctest -R equivalence
+ctest -R techmap
 ```

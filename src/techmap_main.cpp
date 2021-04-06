@@ -223,7 +223,6 @@ void transferState(Node p, DpState &state, bool is_virtually_inverse) {
                 DLOG_ASSERT(false);
         }
     }
-    return;
     if (!p.sources()[0].is_leaf() && p.sources()[0].num_fan_out() == 1 &&
         p.sources()[0].num_sources() == 2) {
         auto aoi21_state   = detail::makeDpState();
@@ -364,7 +363,7 @@ DpState DFS(Node p, bool is_inv) {
     releaseState(ori_state, t3_state);
     releaseState(inv_state, t4_state);
 
-    if (p.num_fan_out() == 1) { inv_state = t4_state; }
+    //    if (p.num_fan_out() == 1) { inv_state = t4_state; }
     inv_state = t4_state;
 
     inv_state.name() = "virtually_inverse_" + inv_state.name();
@@ -454,7 +453,8 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
     const std::string input_path(argv[1]);
-    auto              stopwatch = stopwatch::Stopwatch();
+    LOG(INFO) << "Running benchmarks: " << input_path;
+    auto stopwatch = stopwatch::Stopwatch();
     stopwatch.start();
     Blif2DAGReader reader;
     DLOG_ASSERT(lorina::return_code::success == read_blif(input_path, reader));
