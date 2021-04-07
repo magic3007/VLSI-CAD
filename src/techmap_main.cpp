@@ -475,6 +475,8 @@ int main(int argc, char *argv[]) {
     for (auto &iter : traveler.cell_type_cnt())
         LOG(INFO) << std::setfill(' ') << std::setw(10) << ToString(iter.first) << ": "
                   << iter.second;
+    LOG(INFO) << std::setfill(' ') << std::setw(10) << "AOI21+AOI12" << ": "
+              << traveler.cell_type_cnt()[CellType::AOI12] + traveler.cell_type_cnt()[CellType::AOI21];
     LOG(INFO) << "max depth: " << model_state.max_depth();
     LOG(INFO) << std::setw(10)
               << "Total Elapsed time: " << stopwatch.elapsed<stopwatch::microseconds>() / 1000.0

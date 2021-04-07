@@ -8,6 +8,7 @@
 ### Installation
 
 ```bash
+git submodule update
 mkdir build && cd build
 cmake ..
 make
