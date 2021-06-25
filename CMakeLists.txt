@@ -11,6 +11,8 @@ set(LORINA_EXAMPLES OFF)
 add_subdirectory(3rdparty)
 
 add_subdirectory(src)
+add_subdirectory(exercise1-rc)
+add_subdirectory(exercise2-prop)
 
 enable_testing()
 add_subdirectory(unittest)

@@ -1,0 +1,10 @@
+total_num_nodes 6
+
+Net net_0
+net_0:3 delay: 0.0018055 impulse: 2.94679e-06
+net_0:4 delay: 0.0019645 impulse: 2.98585e-06
+inst_1:ZN delay: 0 impulse: 0
+net_0:2 delay: 0.001508 impulse: 2.81454e-06
+net_0:1 delay: 0.000792 impulse: 1.97723e-06
+inst_5:A1 delay: 0.0020475 impulse: 2.99274e-06
+

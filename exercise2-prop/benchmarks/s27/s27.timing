@@ -1,0 +1,7 @@
+clock clk_net 1e-12
+at clk_net 0 0 
+at reset_net 0 0
+at G0 0 0
+at G1 0 0
+at G2 0 0
+at G3 0 0

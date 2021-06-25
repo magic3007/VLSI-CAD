@@ -1,0 +1,123 @@
+total_num_nodes 99
+
+Net nx6
+nx6:3 delay: 0.0234321 impulse: 0.0006732
+nx6:1 delay: 0.0008812 impulse: 3.81244e-05
+nx6:2 delay: 0.0052242 impulse: 0.000206002
+nx6 delay: 0 impulse: 0
+inst_0:A2 delay: 0.0312476 impulse: 0.000720464
+nx6:4 delay: 0.0258831 impulse: 0.000692505
+nx6:5 delay: 0.0311646 impulse: 0.000720457
+
+Net net_2
+inst_2:ZN delay: 0 impulse: 0
+inst_4:A2 delay: 0.00011767 impulse: 1.38462e-08
+
+Net nx23
+nx23:3 delay: 0.0158179 impulse: 0.000302764
+nx23:2 delay: 0.00569783 impulse: 0.000141939
+nx23:7 delay: 0.022059 impulse: 0.000332632
+nx23:4 delay: 0.0177999 impulse: 0.000316014
+nx23:6 delay: 0.021886 impulse: 0.0003326
+nx23 delay: 0.0220725 impulse: 0.000332632
+inst_4:ZN delay: 0 impulse: 0
+nx23:1 delay: 0.00172683 impulse: 4.87458e-05
+nx23:5 delay: 0.0218303 impulse: 0.000332585
+
+Net nx2
+nx2:3 delay: 0.0189385 impulse: 0.000531007
+nx2:2 delay: 0.0183375 impulse: 0.000522236
+nx2:1 delay: 0.0046655 impulse: 0.000171853
+nx2:4 delay: 0.021908 impulse: 0.0005676
+inst_3:A1 delay: 0.0297944 impulse: 0.000615867
+nx2 delay: 0 impulse: 0
+nx2:5 delay: 0.024369 impulse: 0.000587261
+nx2:6 delay: 0.0297114 impulse: 0.00061586
+
+Net nx3
+nx3:6 delay: 0.0011105 impulse: 6.72724e-05
+nx3:12 delay: 0.0359224 impulse: 0.00117955
+nx3:11 delay: 0.0335574 impulse: 0.00115763
+nx3:8 delay: 0.0113712 impulse: 0.000587451
+nx3:2 delay: 0.0417603 impulse: 0.00121134
+inst_0:A1 delay: 0.0413963 impulse: 0.00121094
+nx3:3 delay: 0.0418572 impulse: 0.00121139
+nx3:10 delay: 0.0215052 impulse: 0.000922654
+nx3:4 delay: 0.0421022 impulse: 0.00121147
+inst_1:A2 delay: 0.042218 impulse: 0.00121148
+nx3:7 delay: 0.0066025 impulse: 0.000367306
+nx3 delay: 0 impulse: 0
+nx3:1 delay: 0.0413133 impulse: 0.00121093
+nx3:5 delay: 0.042135 impulse: 0.00121148
+nx3:9 delay: 0.0164762 impulse: 0.000780728
+
+Net nx1
+nx1:4 delay: 0.0082818 impulse: 0.000262015
+nx1:2 delay: 0.0021109 impulse: 7.84108e-05
+nx1:1 delay: 0.0010609 impulse: 4.03194e-05
+nx1:5 delay: 0.0224894 impulse: 0.000538762
+nx1:6 delay: 0.0246854 impulse: 0.000552947
+nx1 delay: 0 impulse: 0
+inst_1:A1 delay: 0.0288706 impulse: 0.000569832
+nx1:3 delay: 0.0072734 impulse: 0.000236704
+nx1:7 delay: 0.0287876 impulse: 0.000569825
+
+Net nx7
+nx7:3 delay: 0.0408571 impulse: 0.0019695
+nx7:1 delay: 0.0012072 impulse: 8.80556e-05
+nx7:2 delay: 0.0071802 impulse: 0.00048537
+inst_2:A1 delay: 0.0517906 impulse: 0.00206064
+nx7 delay: 0 impulse: 0
+nx7:4 delay: 0.0415234 impulse: 0.00197872
+nx7:5 delay: 0.0447524 impulse: 0.0020122
+nx7:6 delay: 0.0517076 impulse: 0.00206063
+
+Net net_3
+inst_3:ZN delay: 0 impulse: 0
+net_3:4 delay: 0.00595354 impulse: 2.59895e-05
+net_3:2 delay: 0.00487994 impulse: 2.5022e-05
+net_3:1 delay: 0.00503894 impulse: 2.50611e-05
+inst_4:A1 delay: 0.00606924 impulse: 2.60002e-05
+net_3:6 delay: 0.0019695 impulse: 1.53113e-05
+net_3:3 delay: 0.00570954 impulse: 2.59055e-05
+inst_5:A2 delay: 0.00512194 impulse: 2.5068e-05
+net_3:7 delay: 0.003863 impulse: 2.31583e-05
+net_3:5 delay: 0.00598624 impulse: 2.59933e-05
+
+Net nx22
+nx22:5 delay: 0.0357463 impulse: 0.000903316
+nx22:2 delay: 0.0100345 impulse: 0.000407119
+nx22:1 delay: 0.00458503 impulse: 0.000208358
+inst_5:ZN delay: 0 impulse: 0
+nx22 delay: 0.0373258 impulse: 0.00090521
+nx22:4 delay: 0.0280519 impulse: 0.000836499
+nx22:6 delay: 0.0363968 impulse: 0.000904592
+nx22:9 delay: 0.0373248 impulse: 0.00090521
+nx22:7 delay: 0.0369713 impulse: 0.000905115
+nx22:3 delay: 0.0252674 impulse: 0.000800616
+nx22:8 delay: 0.0372593 impulse: 0.000905205
+
+Net net_1
+net_1:7 delay: 0.00475434 impulse: 2.02376e-05
+net_1:10 delay: 0.00247937 impulse: 1.53452e-05
+net_1:5 delay: 0.00445454 impulse: 2.01376e-05
+net_1:4 delay: 0.00480474 impulse: 2.03993e-05
+net_1:9 delay: 0.00219337 impulse: 1.40988e-05
+net_1:1 delay: 0.00524364 impulse: 2.05435e-05
+inst_3:A2 delay: 0.00483734 impulse: 2.02445e-05
+net_1:6 delay: 0.00471954 impulse: 2.02337e-05
+inst_0:ZN delay: 0 impulse: 0
+net_1:2 delay: 0.00512914 impulse: 2.05299e-05
+inst_2:A2 delay: 0.00525094 impulse: 2.05435e-05
+net_1:8 delay: 0.00068187 impulse: 5.17324e-06
+net_1:3 delay: 0.00508924 impulse: 2.05229e-05
+net_1:11 delay: 0.00382787 impulse: 1.93498e-05
+
+Net net_0
+net_0:3 delay: 0.0018055 impulse: 2.94679e-06
+net_0:4 delay: 0.0019645 impulse: 2.98585e-06
+inst_1:ZN delay: 0 impulse: 0
+net_0:2 delay: 0.001508 impulse: 2.81454e-06
+net_0:1 delay: 0.000792 impulse: 1.97723e-06
+inst_5:A1 delay: 0.0020475 impulse: 2.99274e-06
+

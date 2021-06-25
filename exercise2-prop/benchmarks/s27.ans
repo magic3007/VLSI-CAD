@@ -1,0 +1,4 @@
+== Simple timer report ==
+n_nodes = 58
+min setup slack = -2.77072e-10
+min hold slack = -3.94235e-11

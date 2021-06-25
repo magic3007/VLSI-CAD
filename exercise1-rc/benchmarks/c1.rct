@@ -1,0 +1,18 @@
+Total Nets: 1
+net_0 6 10 inst_1:ZN
+inst_5:A1 0.0166
+net_0:1 0.0152
+inst_1:ZN 0.0166
+net_0:2 0.0557
+net_0:4 0.0152
+net_0:3 0.0557
+inst_5:A1 net_0:4 0.005
+net_0:4 inst_5:A1 0.005
+net_0:1 inst_1:ZN 0.005
+inst_1:ZN net_0:1 0.005
+net_0:2 net_0:1 0.005
+net_0:1 net_0:2 0.005
+net_0:2 net_0:3 0.0034
+net_0:3 net_0:2 0.0034
+net_0:4 net_0:3 0.005
+net_0:3 net_0:4 0.005
