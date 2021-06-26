@@ -15,6 +15,8 @@ make
 ```
 
 ### Running & Test
+
+#### Homework #1
 - Run benchmarks with validation
 ```bash
 make run_autology
@@ -27,3 +29,7 @@ ctest -R autology
 ctest -R equivalence
 ctest -R techmap
 ```
+
+#### Howework #3
+- The code is located in `./exercise1-rc/` and `./exercise2-prop`
+- The report is in `./doc/hw3.pdf`
