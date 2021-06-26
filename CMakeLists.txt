@@ -11,6 +11,10 @@ set(LORINA_EXAMPLES OFF)
 add_subdirectory(3rdparty)
 
 add_subdirectory(src)
+add_subdirectory(hw2_pnr/partition)
+add_subdirectory(hw2_pnr/sequencepair)
+add_subdirectory(hw2_pnr/wirelength/BiG)
+add_subdirectory(hw2_pnr/wirelength/LSE)
 add_subdirectory(exercise1-rc)
 add_subdirectory(exercise2-prop)
 
