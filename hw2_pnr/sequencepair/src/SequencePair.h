@@ -14,7 +14,7 @@ class SequencePair {
         }
 
         /* getter */
-        int num_modules() { return num_modules_; }
+        int num_modules() const { return num_modules_; }
         const std::vector<int>& pos_seq() const { return pos_seq_; }
         const std::vector<int>& neg_seq() const { return neg_seq_; }
 
