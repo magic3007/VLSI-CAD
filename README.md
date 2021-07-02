@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-[comment]: <> (### Prerequisites)
+[comment]: <> "### Prerequisites"
 
 ### Installation
 
@@ -28,8 +28,13 @@ make run_techmap 1> /dev/null
 ctest -R autology
 ctest -R equivalence
 ctest -R techmap
+
 ```
 
-#### Howework #3
+#### Homework #2
+- The code is located in `./hw2_pnr`
+- The report is in `./doc/hw2.pdf`
+
+#### Homework #3
 - The code is located in `./exercise1-rc/` and `./exercise2-prop`
 - The report is in `./doc/hw3.pdf`
